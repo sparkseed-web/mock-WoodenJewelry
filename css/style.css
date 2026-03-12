@@ -1,0 +1,149 @@
+@charset "UTF-8";
+
+body {
+  color: #2d2d2d;
+  /*「Crimson Text」のCSSのコードをここにはりましょう！*/
+  font-family: "Crimson Text", serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+
+
+.container {
+  max-width: 1450px;
+  margin: 0 auto;
+  padding: 0 30px
+}
+
+.wrapper {
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+.main-visual img {
+  max-width: 100%;
+  margin-top: 40px;
+  object-fit: cover;
+}
+
+.logo {
+  width: 93px;
+}
+
+.nav {
+  display: flex;
+  margin-top: 20px;
+}
+
+.nav .logo {
+  margin-right: 40px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  font-size: 11px;
+}
+
+li {
+  margin-right: 25px;
+}
+
+h3 {
+  font-weight: normal;
+}
+
+.concept-container,
+.work-container {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  margin-top: 50px;
+  align-items: center;
+}
+
+.work-container {
+  flex-direction: row-reverse;
+}
+
+.concept-container img,
+.work-container img {
+  max-width: 50%;
+  object-fit: cover;
+}
+
+.text {
+  padding: 0 50px;
+}
+
+.text p {
+  font-size: 13px;
+}
+
+.sub-title {
+  padding-bottom: 20px;
+  font-size: 14px;
+}
+
+footer {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 60px 0 15px 0;
+
+}
+
+footer .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* レスポンシブ */
+
+@media (max-width:767px) {
+
+  .nav {
+    padding: 0 16px;
+  }
+
+  .container {
+    padding: 0%;
+  }
+
+  .concept-container,
+  .work-container {
+    display: block;
+    max-width: 900px;
+    /* border: 1px solid red; */
+
+  }
+
+  .main-visual img {
+    margin-top: 0;
+    height: 360px;
+  }
+
+  .concept-container img,
+  .work-container img {
+    /* border: 1px solid rgb(50, 155, 137); */
+  }
+
+  .concept-container img,
+  .work-container img {
+    max-width: 100%;
+  }
+
+
+
+  .text {
+    padding: 0 10px;
+  }
+
+  footer {
+    padding-bottom: 10px;
+  }
+}
+
